@@ -1,0 +1,69 @@
+{
+    "Animiated":{
+        "Nanako": "<a:nanakohwaaagif:593111346669944833>"
+    },
+    "Still":{
+        "Nanako": {
+            "panic": "<:NanakoPanicking:903611130495270952>",
+            "shocked": "<:NanakoShocked:903611108034760704>",
+            "wave":"<:nanakowave:736799089773248553>",
+            "happy": "<:nanakohappy:564830015150227478>",
+            "weird": "<:nanakoweird:733017088721027132>",
+            "wut": "<:nanakowut:564830013258465280>",
+            "worried": "<:nanakoworried:733008700360622100>",
+            "nucky": "<:nanakonucky:733008239259811929>", 
+            "thumbsup": "<:nanakothumbsup:733007663310569472>",
+            "shine": "<:nanakoshine:677002921459843103>",
+            "embarassed2": "<:nanakoembarassed02:677002842225115136>",
+            "pout2": "<:nanapout2:673587784568799240>",
+            "embarassed": "<:nanakoembarassed:587557714528567297>",
+            "egao": "<:nanakoegaode:587541497394757643>",
+            "shy":"<:nanakoshy:571985637541019648>",
+            "shocked2":"<:nanakoshocked:571985635594862603>",
+            "heart": "<:nanakoheart:571985028846977027>",
+            "random": "<:randomnanako:569427893365506048>",
+            "blank": "<:nanakoblank:564830017138196480>",
+            "points": "<:nanakopoints:564830016475496488>",
+            "surrender": "<:nanakosurrender:564830016228032527>",
+            "confused": "<:nanakoconfused:564830016152666141>",
+            "smile": "<:nanakosmile:551418262504603677>",
+            "pout": "<:nanapout:561313255117684747>",
+            "heh": "<:hanako_eh:561312801801502725>",
+            "smirk2": "<:nanakoSmirk2:556020677707169802>",
+            "pictured": "<:nanakopictured:556020572467888138>",
+            "surprised": "<:nanakosurprised:554901737048375297>",
+            "huh": "<:nanakohuh:554901611013472262>",
+            "specsmirk": "<:nanakospecsmirk:554901573646549023>",
+            "heh2": "<:nanakoheh:554901471657852938>",
+            "veryhappy": "<:nanakoveryhappy:554901435079327754>",
+            "cry": "<:nanakocry:554901314539094016>",
+            "blush": "<:nanakoblush:554901238265937920>"
+        },
+        "Eiji": {
+            "shocked": "<:EijiShocked:903611072219598849>",
+            "nucky": "<:eijiallmightbgblank:569429473926184971>",
+            "assured": "<:eijiassured:564830014114234394>",
+            "hyper": "<:Eiji_hyper:564276705024278568>"
+            },
+        "Prez": {
+            "wut": "<:amanewut:564830020418273290>",
+            "wut2":"<:Prez_wut:561313130521821194>",
+            "isee": "<:prez_isee:561313101325271040>"
+            },
+        "Sensei": {
+            "smile": "<:Sensei_smile:561310087784693770>"
+        },
+        "Koto": {
+            "panic": "<:KotoPanicking:903612516976984084>",
+            "wave": "<:kotowave:575626621671702528>", 
+            "smile": "<:kotosmile:569427864542511104>"
+        },
+        "Kino": {},
+        "Tao": {
+            "tao1": "<:taozzzzz:587558632338620416>"
+        },
+        "Hanabi": {
+            "blush": " <:HanabiBlush:903611287337054259>"
+            }
+    }
+}

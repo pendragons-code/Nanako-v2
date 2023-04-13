@@ -1,0 +1,13 @@
+{
+	"Bot": {
+		"OwnerID": ["875324148874895400", "861227582733156353"],
+		"Site": "https://fordrodez.xyz",
+		"ID": "861249889202995280",
+		"AddLink": "https://discord.com/oauth2/authorize?client_id=861249889202995280&permissions=8&scope=bot"
+	},
+	"Default": {
+		"defaultPrefix": "nanako",
+		"defaultEmbedColor": "#FFA500",
+		"defaultFooterText": "Please consider adding me from my site! - Nanako"
+	}
+}
