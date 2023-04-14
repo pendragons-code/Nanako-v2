@@ -20,6 +20,30 @@ module.exports = async (bot, messageCreate) => {
 		const categoryDisable = await db.get(`disabledCategory_${messageCreate.guild.id}_${cmd.category}`)
 		if(commandDisable === "disabled" || categoryDisable === "disabled") return messageCreate.channel.send(reject.UserFault.privilege.DisabledCommand)
 		if(cmd.maxArgs) if(args[maxArgs + 1]) return messageCreate.channel.send(reject.UserFault.args.tooMany)
+		if(cmd.minPerms) for(let i = 0; i < cmd.minPerms.length; ++i) if(!messageCreate.member.permissions.has(cmd.minPerms[i])) {
+			let MissingPermissionName = PermissionList[cmd.minPerms[i]]
+			if(Array.isArray(cmd.minPerms[i])) {
+				let MissingPermissionName = ""
+				for(let perArray = 0; perArray < cmd.minPerms[i].length; ++perArray) {
+					let MissingPermissionNameFromAndLogic = PermissionList[cmd.minPerms[i][perArray]]
+					MissingPermissionName + `\`${MissingPermissionNameFromAndLogic}\``
+					if(cmd.minPerms[i][perArray + 1]) MissingPermissionName + ", "
+				}
+			}
+			return messageCreate.channel.send(`${reject.UserFault.privilege.MissingPermissions} ${MissingPermissionName}`)
+		}
+		if(args[0] === "-h") return messageCreate.channel.send(cmd.utilisation)
+		if(NewUser !== "SentNewUserMessage") bot.utils.get("newuser").execute(bot, messageCreate, args)
+		if(cmd.category === "creator" && !Bot.OwnerID.includes(messageCreate.author.id)) return messageCreate.channel.send(reject.UserFault.privilege.CreatorOnly)
+		cmd.execute(bot, messageCreate, args, prefix)
+		await db.add(`cmdsRan_${messageCreate.author.id}`, 1)
+		.catch((error) => {
+			console.error(error)
+			return messageCreate.channel.send(reject.WeAreScrewed.ExecutionError)
+		})
 	} catch(e) {
+		console.log("Oh shit!")
+		console.error(error)
+		return messageCreate.channel.send(reject.WeAreScrewed.ExecutionError)
 	}
 }
