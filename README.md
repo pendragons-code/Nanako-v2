@@ -6,3 +6,9 @@ Expect many of the packages to be VERY outdated and majorly changed!
 We are going to phase out weather-js and mal-scraper due to security reasons.
 We will, however, take some time to figure out alternate solutions.
 ```
+
+# To Dos
+```
+[.] Work on base bot design, add in a webserver/dashboard.
+[.] Work on the commands!
+```

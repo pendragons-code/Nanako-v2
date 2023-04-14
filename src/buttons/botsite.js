@@ -7,6 +7,11 @@ module.exports = async ({ bot, interactionCreate })=> {
 	embed.setDescription("Please add the discord bot!")
 	embed.setTitle("Add link!")
 	embed.setURL(Bot.Site)
+	embed.addFields(
+		{ name: "Bot add link", value: `[Click me!](${Bot.AddLink})` }
+	)
+	embed.setTimestamp()
+	interactionCreate.reply({ embeds: [embed] })
 }
 // To update all emotes into a json file! This is because the emoji.json fileis outdated!!
 // Nanako will not have heavy implementation of the interactions system
