@@ -1,0 +1,5 @@
+const { readdirSync } = require("fs")
+const express = require("express")
+const routeFrontEnd = express.Router()
+const { rateLimit } = require("express-rate-limit")
+const { windowMinutes, maxWindowRequest, standardHeaders, legacyHeaders, message } = require("../../configs/rateLimit.json")
