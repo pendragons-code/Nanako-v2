@@ -10,5 +10,9 @@ We will, however, take some time to figure out alternate solutions.
 # To Dos
 ```
 [.] Work on base bot design, add in a webserver/dashboard.
+    [.] front end
+    [.] socket io client side integration
+
 [.] Work on the commands!
+    [.] all of them
 ```
