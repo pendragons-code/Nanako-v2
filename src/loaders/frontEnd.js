@@ -11,3 +11,14 @@ const limiter = rateLimit({
 	legacyHeaders: legacyHeaders,
 	message: message
 })
+
+routerFrontEnd.use(limiter)
+const loadFrontEndFile = readdirSync("./src/frontEnd/PageLoader").filter(files => files.endsWith(".js"))
+for(file of loadFrontEndFile) {
+	const { execute, name } = require(`../frontEnd/PageLoader/${file}`)
+	routeFrontEnd.get(`/${name}`, async (req, res) => {
+		execute(req, res)
+	})
+}
+
+module.exports = routeFrontEnd
