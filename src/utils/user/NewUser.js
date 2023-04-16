@@ -1,5 +1,4 @@
 const { EmbedBuilder } = require("discord.js")
-const { Default } = require("../../../configs/config.json")
 const reject = require("../../../assets/general/rejection.json")
 const { db } = require("../../loaders/database.js")
 const { Default } = require("../../../configs/config.json")

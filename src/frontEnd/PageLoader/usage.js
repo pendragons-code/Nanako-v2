@@ -1,6 +1,8 @@
+const { returnUsage } = require("../../functions/usage.js")
 module.exports = {
-	name: "/"
+	name: "/",
 	async execute(req, res) {
-		res.render("index.ejs")
+		let usageToDisplay = await returnUsage()
+		res.render("index.ejs", { usage: usageToDisplay })
 	}
 }

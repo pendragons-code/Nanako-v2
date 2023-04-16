@@ -12,7 +12,7 @@ const limiter = rateLimit({
 	message: message
 })
 
-routerFrontEnd.use(limiter)
+routeFrontEnd.use(limiter)
 const loadFrontEndFile = readdirSync("./src/frontEnd/PageLoader").filter(files => files.endsWith(".js"))
 for(file of loadFrontEndFile) {
 	const { execute, name } = require(`../frontEnd/PageLoader/${file}`)

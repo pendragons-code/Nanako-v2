@@ -1,5 +1,5 @@
 const { cpuUsage } = require("os-utils")
-const { db } = require("../../loaders/bot.js")
+const { db } = require("../../loaders/database.js")
 module.exports = async (bot) => {
 	let editmode = await db.get("editmode")
 	cpuUsage(function(cpuUsageDetails) {
@@ -9,7 +9,7 @@ module.exports = async (bot) => {
 	})
 	setInterval(function() {
 		if(editmode === "on") bot.user.setActivty("Editmode is on!")
-		bot.user.setActivity("Use 'jas help' for commands!")
+		bot.user.setActivity("Use 'nanako help' for commands!")
 	}, 3000)
 	bot.webPage
 	//bot.copyDB
