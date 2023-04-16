@@ -16,3 +16,6 @@ We will, however, take some time to figure out alternate solutions.
 [.] Work on the commands!
     [.] all of them
 ```
+
+# Currency system
+Will have to update the entire thing, we need to make the game interesting.
