@@ -1,7 +1,10 @@
 {
 	"Bot": {
+		"version": "v2.5",
 		"OwnerID": ["875324148874895400", "861227582733156353"],
 		"Site": "https://fordrodez.xyz",
+		"serverLink": "https://discord.com/invite/dBmEGAm",
+		"vote": "https://top.gg/bot/861249889202995280",
 		"ID": "861249889202995280",
 		"AddLink": "https://discord.com/oauth2/authorize?client_id=861249889202995280&permissions=8&scope=bot"
 	},
