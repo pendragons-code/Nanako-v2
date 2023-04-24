@@ -1,7 +1,5 @@
 const { EmbedBuilder } = require("discord.js")
 const { Default } = require("../../../../configs/config.json")
-const emoji = require("../../../../assets/general/emoji.json")
-const reject = require("../../../../assets/general/rejection.json")
 const axios = require("axios")
 module.exports = {
 	name: "cat",
