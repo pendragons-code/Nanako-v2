@@ -3,7 +3,6 @@ const bot = new Client({
 	intents: [
 		GatewayIntentBits.DirectMessages,
 		GatewayIntentBits.Guilds,
-		GatewayIntentBits.GuildBans,
 		GatewayIntentBits.GuildMessages,
 		GatewayIntentBits.MessageContent,
 		GatewayIntentBits.GuildWebhooks,
@@ -17,7 +16,10 @@ const bot = new Client({
 		GatewayIntentBits.GuildMessageTyping,
 		GatewayIntentBits.GuildPresences,
 		GatewayIntentBits.GuildScheduledEvents,
-		GatewayIntentBits.GuildVoiceStates
+		GatewayIntentBits.GuildVoiceStates,
+		GatewayIntentBits.AutoModerationConfiguration,
+		GatewayIntentBits.AutoModerationExecution,
+		GatewayIntentBits.GuildModeration
 	]
 })
 module.exports = { bot }
